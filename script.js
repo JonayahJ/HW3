@@ -25,7 +25,7 @@ var special = " !#$%&'()*+,-./:;<=>?@[]^_`{|}~".split("");
 // length
 var pwLength = prompt("How long would you like your password to be?\nPlease choose a NUMBER between 8 and 128")
 
-pwCount = parseInt(pwLength)
+// pwCount = parseInt(pwLength)
 
 // character types
 var confirmLC = prompt("Do you want to include lowercase letters?\nType y for yes. Type n for no.");
@@ -60,15 +60,15 @@ if (confirmS === "y") {
 } else {
 
 }
+// create a string of all acceptible characters
+var char = lowerCase.concat(upperCase, numbers, special);
 
-// randomize the characters to make a password (string) ============================
+// use randomized characters to make a password (string) ============================
 var randomString = "";
 
-function generatePassword(pwLength) {
+function generatePassword(pwCount) {
   
 }
-
-// display characters
 
 
 // validate?

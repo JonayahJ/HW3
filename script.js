@@ -14,29 +14,33 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 
-// WHEN I click the button to generate a password
-// THEN I am presented with a series of prompts for password criteria
+// PASSWORD CRITERIA
+// prompt1 is for length
+var length = prompt("How long would you like your password to be?\nPlease choose a NUMBER between 8 and 128")
 
-//prompt1 is for length
-//prompt2 is for character type
+// "prompt2" is for character types
+alert("Do you want to include lowercase letters?\nChoose Ok for yes. Choose Cancel for no.")
+alert("Do you want to include UPPERCASE letters?\nChoose Ok for yes. Choose Cancel for no.")
+alert("Do you want to include numbers?\nChoose Ok for yes. Choose Cancel for no.")
+alert("Do you want to include special characters?\nChoose Ok for yes. Choose Cancel for no.")
 
-// WHEN prompted for password criteria
-// THEN I select which criteria to include in the password
+// variables
+var lowerCase = "abcdefghijklmnopqrstuvwxyz".split("");
+var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+var special = " !#$%&'()*+,-./:;<=>?@[\]^_`{|}~".split("");
+var randomString = "";
 
-// WHEN prompted for the length of the password
-// THEN I choose a length of at least 8 characters and no more than 128 characters
+// FUNCTIONS and SUCH
+if (length > 0) {
+  for (var i=0; i < length; i++){
+    // need to combine lowerCase, upperCase, numbers, and specials (if user chooses)
+  }
+}
 
 function name(params) {
   
 }
-
-// WHEN prompted for character types to include in the password
-// THEN I choose lowercase, uppercase, numeric, and/or special characters
-
-var lowerCase = "abcdefghijklmnopqrstuvwxyz".split("")
-var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
-var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-var special = " !#$%&'()*+,-./:;<=>?@[\]^_`{|}~".split("")
 
 // WHEN I answer each prompt
 // THEN my input should be validated and at least one character type should be selected

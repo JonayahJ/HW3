@@ -25,7 +25,7 @@ var special = " !#$%&'()*+,-./:;<=>?@[]^_`{|}~".split("");
 // length
 var pwLength = prompt("How long would you like your password to be?\nPlease choose a NUMBER between 8 and 128")
 
-// pwCount = parseInt(pwLength)
+pwCount = parseInt(pwLength)
 
 // character types
 var confirmLC = prompt("Do you want to include lowercase letters?\nType y for yes. Type n for no.");

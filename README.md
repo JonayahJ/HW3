@@ -11,9 +11,9 @@ To create a password generator, I did the following:
 
 * Then I created empty arrays for the new password and the random sets of characters to fill in.
 
-*  Next, I added a counter to tally the number of characters the user needs to have of each of the minor strings.
+*  Next, I added a counter to tally the number of characters the user needs to have of each of the minor strings (validation).
 
-* I created if then statements to concatinate the sets of minor strings that the user wants to include in their password.  I added the tally for each of the minor strings to pull from.
+* I created if/then statements to concatinate the sets of minor strings that the user wants to include in their password and then added the tally for each of the minor strings to pull from.
 
 * I had to check my work so I added in some console logs to see how things were doing.
 
@@ -30,3 +30,7 @@ To create a password generator, I did the following:
 3. Choose which character types you want to include: letters (lower and upper case), numbers, and special characters.
 
 4. Your new password will popup in the prompt area on the page.
+
+## Comments
+
+This was hard.  I know where and what to study this weekend.  
